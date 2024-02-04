@@ -1,0 +1,9 @@
+Level Maker user instructions:
+1.	Import package to project.
+2.	Add the Sample Level Piece Prefab to your scene ("/GM Level Maker/Example/Sample Level Piece.prefab")
+3.	Select the object
+4.	Select the handles to move splines, reshaping the object to your desired shape
+5.	Use additional settings in the inspector to add/remove curves, recenter the mesh, reset splines and add quality levels to the mesh
+6. 	Add your own materials to the Mesh Renderer to make it match your style
+
+Also included is an example scene to show some shapes you can make using this tool. ("/GM Level Maker/Example/Example Scene.unity")
