@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelItem : MonoBehaviour
 {
     public PlatformScript platformScript;
+    public PanelScript panelScript;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,6 +15,12 @@ public class LevelItem : MonoBehaviour
     void ActivateScript()
     {
         platformScript.active = true;
+    }
+    void ActivatePanel()
+    {
+        //panelScript.active = true;
+        //panelScript.toggleUIScreen();
+        panelScript.gameObject.SetActive(true);
     }
 
     // Update is called once per frame
@@ -27,6 +34,11 @@ public class LevelItem : MonoBehaviour
         if (platformScript)
         {
             ActivateScript();
+
+        }        
+        if (panelScript)
+        {
+            ActivatePanel();
 
         }
         Destroy(gameObject);
