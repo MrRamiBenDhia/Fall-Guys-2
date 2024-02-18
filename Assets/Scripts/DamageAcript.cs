@@ -33,6 +33,6 @@ public class DamageAcript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        addDamage();
+        addDamage();    
     }
 }
