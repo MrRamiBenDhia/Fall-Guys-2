@@ -11,28 +11,34 @@ public class DamageAcript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     [ContextMenu("Damage")]
     void addDamage()
     {
-        health.ApplyDamage(10);
+        if (health == null)
+            health.ApplyDamage(10);
     }
     [ContextMenu("Health")]
     void addHealth()
     {
-        health.AddHealth(10);
+        if (health == null)
+            health.AddHealth(10);
     }
 
     private void OnTriggerEnter(Collider other)
     {
-        addDamage();    
+        if (other.tag=="Player")
+        {
+            health = (Health)other.GetComponent<Health>();
+        }
+        addDamage();
     }
 }
