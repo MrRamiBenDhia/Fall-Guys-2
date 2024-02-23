@@ -23,22 +23,30 @@ public class DamageAcript : MonoBehaviour
     [ContextMenu("Damage")]
     void addDamage()
     {
-        if (health == null)
+        if (health != null)
             health.ApplyDamage(10);
     }
     [ContextMenu("Health")]
     void addHealth()
     {
-        if (health == null)
+        if (health != null)
             health.AddHealth(10);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+        {
+            health = collision.gameObject.GetComponentInParent<Health>();
+            addDamage();
+        }
 
+    }
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag=="Player")
+        if (other.tag == "Player")
         {
-            health = (Health)other.GetComponent<Health>();
+            health = other.gameObject.GetComponentInParent<Health>();
+            addDamage();
         }
-        addDamage();
     }
 }
