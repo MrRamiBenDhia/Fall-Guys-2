@@ -10,6 +10,13 @@ public class FanScript : MonoBehaviour
     public GameObject rotatingPart;
     public bool active = true;
 
+    private void Start()
+    {
+        if (rotatingPart == null)
+        {
+            rotatingPart = gameObject.transform.GetChild(0).gameObject;
+        }
+    }
     void Update()
     {
         if (active)
