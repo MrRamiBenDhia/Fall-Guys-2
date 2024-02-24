@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameLogic : MonoBehaviour
 {
@@ -25,8 +26,13 @@ public class GameLogic : MonoBehaviour
 
     public void restartGame()
     {
-        player.transform.position = originalPlayerPosition;
-        player.transform.rotation = originalPlayerRotation;
+        restartScene();
+    }
+
+    public void restartScene()
+    {
+        int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(currentSceneIndex);
     }
 
     void Start()
@@ -35,8 +41,7 @@ public class GameLogic : MonoBehaviour
         {
             player = gameObject;
         }
-        originalPlayerPosition = player.transform.position;
-        originalPlayerRotation = player.transform.rotation;
+        
     }
 
     void Update()
