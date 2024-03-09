@@ -1,0 +1,114 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8098979924091943514
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 73.35222
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 81.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679679066664961204, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_Name
+      value: Player Character  With health Variant Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 3679679066664961204, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3679679066664961204, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2084376360412868073}
+  m_SourcePrefab: {fileID: 100100000, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+--- !u!1 &4860936272707108590 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3679679066664961204, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+  m_PrefabInstance: {fileID: 8098979924091943514}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2084376360412868073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4860936272707108590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ff3ba0becae47b8b9381191598957c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncDirection: 1
+  syncMode: 0
+  syncInterval: 0
+  target: {fileID: 7797614652532006272}
+  syncPosition: 1
+  syncRotation: 1
+  syncScale: 0
+  onlySyncOnChange: 1
+  compressRotation: 1
+  interpolatePosition: 1
+  interpolateRotation: 1
+  interpolateScale: 1
+  coordinateSpace: 0
+  sendIntervalMultiplier: 1
+  timelineOffset: 0
+  showGizmos: 0
+  showOverlay: 0
+  overlayColor: {r: 0, g: 0, b: 0, a: 0.5}
+  onlySyncOnChangeCorrectionMultiplier: 2
+  rotationSensitivity: 0.01
+  positionPrecision: 0.01
+  scalePrecision: 0.01
+--- !u!4 &7797614652532006272 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2041232763445061594, guid: d4266a958d6873b40ac7b1f052b0af60, type: 3}
+  m_PrefabInstance: {fileID: 8098979924091943514}
+  m_PrefabAsset: {fileID: 0}
