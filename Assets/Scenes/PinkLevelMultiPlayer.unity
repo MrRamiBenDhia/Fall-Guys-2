@@ -13344,9 +13344,9 @@ MonoBehaviour:
   disconnectInactiveConnections: 0
   disconnectInactiveTimeout: 60
   authenticator: {fileID: 0}
-  playerPrefab: {fileID: 0}
+  playerPrefab: {fileID: 4860936272707108590, guid: d685998fe434ccb4ca07fd664bfba3d6, type: 3}
   autoCreatePlayer: 1
-  playerSpawnMethod: 0
+  playerSpawnMethod: 1
   spawnPrefabs: []
   exceptionsDisconnect: 1
   snapshotSettings:
@@ -29559,6 +29559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Character  With health Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 4860936272707108590, guid: d685998fe434ccb4ca07fd664bfba3d6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7797614652532006272, guid: d685998fe434ccb4ca07fd664bfba3d6, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -29603,8 +29607,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7907948498311576215, guid: d685998fe434ccb4ca07fd664bfba3d6, type: 3}
+      propertyPath: sceneId
+      value: 2554277801
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2898938081601015373, guid: d685998fe434ccb4ca07fd664bfba3d6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: d685998fe434ccb4ca07fd664bfba3d6, type: 3}
