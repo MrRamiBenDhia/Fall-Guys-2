@@ -4,15 +4,32 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ice
+  - Action
+  - AutoCrouch
+  - Ragdoll
+  - Ignore Ragdoll
+  - Boss
+  - Enemy
+  - CompanionAI
+  - Weapon
+  - LookAt
+  - Dirt
+  - Wood
+  - Metal
+  - Concrete
+  - Glass
   - Water
-  - Grass
-  - Ledge
-  - Honey
-  - Mud
-  - Boost
-  - WallSlide
-  - JumpDown
+  - LadderTrigger
+  - ExitWater
+  - Barrel
+  - FreeClimb
+  - ClimbDirection
+  - Zipline
+  - PlayerUI
+  - Collectable
+  - CoverPoint
+  - Interactable
+  - AIAction
   layers:
   - Default
   - TransparentFX
@@ -22,7 +39,17 @@ TagManager:
   - UI
   - 
   - 
-  - One Way Platform
+  - Player
+  - Enemy
+  - CompanionAI
+  - Triggers
+  - StopMove
+  - 
+  - HeadTrack
+  - BodyPart
+  - BlockAIRayCast
+  - Pushable
+  - CoverPoint
   - 
   - 
   - 
@@ -35,17 +62,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - PostProcess
   m_SortingLayers:
   - name: Default
     uniqueID: 0
