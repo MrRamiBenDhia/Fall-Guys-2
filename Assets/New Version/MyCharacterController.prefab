@@ -2066,6 +2066,15 @@ MonoBehaviour:
   syncMode: 0
   syncInterval: 0
   parent: {fileID: 5165596998012539101}
+  listToDisable:
+  - {fileID: 11450382}
+  - {fileID: 114000013620396000}
+  - {fileID: 11434930}
+  - {fileID: 11411552}
+  - {fileID: 11471804}
+  - {fileID: 11414148}
+  - {fileID: 11441156}
+  - {fileID: 1174099743}
 --- !u!114 &11450382
 MonoBehaviour:
   m_ObjectHideFlags: 0
